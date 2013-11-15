@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>UCSD CSE Day</title>
+	<script type='text/javascript' src='jquery.js'></script>
+    
+	<link rel='stylesheet' type='text/css' href='style.css' />
+	<script type='text/javascript'>
+	    $(function() {
+	        $('.btns').css('opacity', '.40');
+	        $('.btns').mouseenter(function(){
+	            $(this).css('opacity', '1');
+	        }).mouseleave(function(){
+	            $(this).css('opacity', '.40');	            
+	        });  
+
+	        $('.event').css('opacity', '.65');
+	        $('.event').mouseenter(function(){
+	            $(this).css('opacity', '1');
+	        }).mouseleave(function(){
+	            $(this).css('opacity', '.65');	            
+	        });  
+
+                $('.info').hide();
+	    });
+	    
+	    var sel_tab = "about";
+	    function change(tab) {
+	        $('#' + sel_tab).fadeOut('fast', function(){
+	            $('#' + tab).fadeIn('fast');
+	            sel_tab = tab;
+	        });
+	    }
+
+            function toggle (name) {
+                $("#" + name).slideToggle('slow');
+            }
+			
+			function transitionThis () {
+				setTimeout("$('#intro1').fadeOut()", 0);
+				setTimeout("$('#intro2').fadeOut()", 0);
+				setTimeout("$('#intro3').fadeOut()", 0);
+				setTimeout("$('#intro4').fadeOut()", 0);
+				setTimeout("$('#intro5').fadeOut()", 0);
+				setTimeout("$('#container').fadeIn(500)", 200);
+			}
+
+	</script>
+</head>
+<body onLoad="transitionThis();">
+       
+    <div id='container'>
+        <div style='background-color: #EEE;'>
+            <div style='width: 500px; margin: 0 auto;'>
+                <div><img src='images/cseday-logo.png'></div>
+            </div>
+        </div>
+        <div style='margin-top: 10px;'>   
+            <div class='btns' onclick='change("about");'><img src='images/about.png' width='65px'>&nbsp;What's CSE Day?</div>
+            <div class='btns' onclick='change("schedule");'><img src='images/schedule.png' width='65px'>&nbsp;Schedule of Events</div>
+            <div class='btns' onclick='change("register");'><img src='images/register.png' width='65px'>&nbsp;Jeopardy Registration</div>
+        </div>
+        <div id='about' class='content' style='clear: both;'>
+            <div style='padding-top: 20px;'>
+                <div class='title'>What's CSE Day?</div>
+                <div class='content-text'>
+                    CSE Day is day for all Computer Science, Computer Engineering, and anyone interested about CSE to come learn about the many opportunities they possess, be it in industry or in academia.
+                      <p>
+                    The day will be dedicated to a series of talks and panels where students are encouraged to ask whatever question pops into their mind about their CSE education.<p>
+                    <p>The event will take place on <span class='company'>Friday, May 4, 2012</span> in <span class='company'>CSE 1202</span>. Hope to see you there!</p>
+                    We'll have attendees from <span class='company'>Facebook</span>, <span class="company">Cisco</span>, <span class="company">Northrop Grumman</span>, <span class="company">Life Tech</span>  and more!<p>
+                    <div class='please-register'>
+                        If you're a student and want to participate in Jeopardy, please <a href='javascript: change("register");'>register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id='register' class='content' style='clear: both; display: none;'>
+            <div style='padding-top: 20px;'>
+                <div class='title'>Register for Jeopardy</div>
+                <div class='content-text'>
+<iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey=dC1lWGtNVENxcFhFU2h0UVdhbkxpMkE6MQ" width="760" height="968" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+               </div>
+            </div>
+        </div>
+        <div id='schedule' class='content' style='clear: both; display: none;'>            
+            <div style='padding-top: 20px;'>
+                <div class='title'>May 4, 2012 - CSE 1202</div><br />
+                
+                
+                
+                    <div class='event' onclick='toggle("gradresearchpanel");'>
+                        <div class='name'>Startup Panel</div>
+                        <div class='date'>11:00am - 12:00am</div>                        
+                        <div id='gradresearchpanel' class='info'>
+    <b>Startups attending:</b><br>
+    <a href="http://www.xpenser.com">Xpenser</a><Br>
+    <a href="http://www.primacinema.com/">Prima Cinema</a><br>
+    <a href="http://tapchow.com/">TapChow</a><br>
+    <a href="http://www.taaz.com/">Taaz</a><br>
+    <a href="http://www.gelbergroup.com/Gelber_Group/Home.html">Gelber group</a><br>
+                        </div>
+                    </div><br />
+                    
+                    
+                    
+                    <div class='event' onclick='toggle("internshippanel");'>
+                        <div class='name'>Lunch & Networking</div>
+                        <div class='date'>12:05pm - 1:30pm</div>
+                        <div id='internshippanel' class='info'>
+                        <!--
+                        <p>Want to get some experience, but don't know where to start? Get an idea by listening to you UCSD undergraduates talk about their internship and research experience. Find out what you need to get that dream internship or research position, or get some idea on where you might like to work.</p>
+                        <p>Kristina Thai - Intuit</p>
+                        <p>Haronid Moncivais - Microsoft</p>  
+                        <p>David Watson - Apple</p>
+                        <p>Grant Van Horn - Qualcomm</p>
+                    -->
+                        </div>
+                    </div><br />
+                    
+                    
+                    
+                    <div class='event' onclick='toggle("lunch");'>
+                        <div class='name'>Industry Panel</div>
+                        <div class='date'>1:30pm - 2:30pm</div>                        
+                        <div id='lunch' class='info'>
+                           <b>Companies Attending:</b><Br>
+                           <a href="http://www.facebook.com">Facebook</a><br>
+                           <a href="http://www.northropgrumman.com">Northrop Grumman</a><br>
+<a href="http://www.cisco.com">Cisco</a><br>
+<a href="http://www.qualcomm.com">Qualcomm</a><br>
+<a href="http://www.lifetechnologies.com/">Life Technologies</a><br>
+                           </div>
+                    </div><br />
+                    
+                    
+                    <!--
+                   <div class='event' onclick='toggle("industrytalk");'>
+                        <div class='name'></div>
+                        <div class='date'>12:30pm - 1:15pm</div>                        
+                        <div id='industrytalk' class='info'>
+                        -->
+                        <!--
+
+
+                        <p></p><p>More information coming soon. Check back later!</p> 
+                        <p>Taner Halicioglu, CSE'96, Lead Reliability Engineer, Battle.net - Blizzard Ent.</p>
+                        -->
+                        <!-- 
+                        </div>
+                    </div><br />
+                    -->
+                    
+                    
+                    
+                    <div class='event' onclick='toggle("facultyspeaker");'>
+                        <div class='name'>Faculty Speaker</div>
+                        <div class='date'>2:40pm - 3:30pm</div>
+                        <div id='facultyspeaker' class='info'>
+                        <!--
+                            <p>Come listen to Professor Ranjit Jhala talk about his research and interesting topics in Computer Science and Engineering. Topic and abstract to be determined soon, so check back!</p>
+                        <p>Ranjit Jhala</p>
+						<p>
+							<b>Information Flow Analysis for JavaScript Web Applications</b>
+							</br>(Joint work with Ravi Chugh, Jeff Meister, Don Jang, Sorin Lerner and Hovav Shacham)
+						</p>
+						<p>Information flow control can offer important security and privacy benefits
+							in the context of JavaScript based web applications that dynamically load
+							third-party code which can steal or corrupt important client information.
+							These benefits have not yet been reaped due to the challenging nature of
+							analyzing JavaScript code. In this talk, we describe some approaches to
+							analyzing JavaScript to enforce flow control. We highlight some of the
+							(many!) challenges that must be addressed in order to analyze real-world
+							JavaScript. Finally, we describe results from an empirical investigation
+							of various security and privacy violating flows on a large number of
+							popular websites.
+						</p>
+					-->	
+                        </div>
+                    </div><br />
+                    
+                    
+                    
+                    
+                    <div class='event' onclick='toggle("industrypanel");'>
+                        <div class='name'>Undergrad, Grad, and Alumni Speed Dating</div>
+                        <div class='date'>3:35pm - 4:45pm</div>                        
+                        <div id='industrypanel' class='info'>
+<!--
+                            <p>Wonder what life's like after you graduate?</p>
+                        <p>Come to the industry panel and find out directly from Software Engineers from Google, Amazon, Northrop Grumman, and more. Learn about what they look for in interns or new hires, what the interview process is life, what you can expect out of a job at their companies, and any other question you can think of!</p>
+                       
+                        <p>Chip Chapin - Google</p>
+                        <p>Gail Slemon - Northrop Grumman</p>
+                        <p>Kathleen Naghton - HP</p>
+                        <p>Michael Avrukin - LinkedIn</p>
+                        <p>Satya Mallick - Taaz / Photometria</p>
+  -->
+                        </div>
+                    </div><br />
+                    
+                    
+                    
+                    <div class='event' onclick='toggle("projectfair");'>
+                        <div class='name'>Dinner & Project Fair</div>
+                        <div class='date'>5:00pm - 6:00pm</div>                        
+                        <div id='projectfair' class='info'>
+                            <!--
+                            <p>The project and poster fair will be a chance for CSES and other CSE students to show of the hardword they've put into projects throughout the year. Featured projects will be the CSES Multitouch table and the LISP game engine.</p>
+                        <p>LISP game engine - Thopter</p>
+                        <p>CSES Tweenbot Project</p>
+                        <p>CSES Multitouch Project</p>
+                        <p>Special Interest Groups - Embedded Systems and Computation Theory</p>                        
+                    -->
+                      </div>
+                    </div><br />
+
+                    
+                    
+
+                    <div class='event' onclick='toggle("jeopardy");'>
+                        <div class='name'>Jeopardy</div>
+                        <div class='date'>6:00pm - 7:00pm</div>
+                        <div id='jeopardy' class='info'>
+                            <p>Come participate in the annual student vs faculty Jeopardy battle! There might even be some awesome swag for the winners! Please <a href='javascript: change("register");'>register</a> if you're interested in participating!</p>
+                    </div>
+                    </div><br />
+            </div>
+        </div>                
+    </div>
+</body>
+</html>
+

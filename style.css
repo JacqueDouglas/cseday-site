@@ -1,0 +1,148 @@
+BODY {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Verdana, Arial, sans-serif;        
+}
+
+IMG {
+    vertical-align: middle;
+}
+
+#wrapper {
+margin-top: 300px;
+margin-bottom: 200px;
+margin-right: auto;
+margin-left: auto;
+width: 900px;
+}
+
+#intro1, #intro2, #intro3, #intro4, #intro5 {
+	width: 100%;
+	font-size: 2em;
+}
+
+#intro5 {
+	font-size: 1em;
+}
+
+#intro2, #intro3, #intro4, #intro5 {
+	margin-top: 10px;
+}
+
+#learn, #listen, #network, #skip {
+	text-align: left;
+	display: inline-block;
+	opacity: 0;
+	margin-left: 10%;
+}
+
+#learn2, #listen2, #network2 {	
+	display: inline-block;
+	opacity: 0;
+}
+
+#listen, #network {
+	margin-left: 25.7%;
+}
+
+
+#skip {
+	margin-left: 79%;
+	opacity: 1;
+	font-style:italic;
+	text-decoration: none;
+	color: #006;
+}
+
+#c, #s, #e {
+	display: inline;
+	opacity: 0;
+	color: #000;
+}
+
+
+
+#cImg, #sImg, #eImg {
+	width: 1em;
+	height: 1em;
+	margin-left: -1em;
+	opacity: 0;
+}
+
+#all, #day {
+	display: inline;
+	opacity: 0;
+}
+
+#all {
+	margin-left: 33%;
+}
+
+
+
+#container {
+    width: 800px;
+    margin: 0 auto;
+	display: none;
+}
+
+.btns {
+    float: left;
+    font-size: 20px;
+    font-family: Helvetica, Verdana, Arial, sans-serif;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.title {
+    font-size: 20px;
+    border-bottom: 2px solid #1691d8;
+    padding-bottom: 5px;
+}
+
+.content {
+    width: 775px;
+    margin: 0 auto;
+}
+
+.content-text {
+    font-size: 15px;
+    line-height: 25px;
+    padding: 20px;
+}
+
+.date {
+    /*float: left;*/
+    font-size: 18px;
+    color: #999 ;
+    cursor: pointer;
+	width: 100%;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+	width: 100%;
+}
+
+.info {
+    /*margin: 0 0 20px;*/
+    font-size: 15px;
+    line-height: 25px;
+	width: 100%;
+}
+
+.company {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.please-register {
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #AFEEEE;
+    padding: 8px 3px 8px 3px;
+    background-color: #4682B4;
+}

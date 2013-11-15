@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>UCSD CSE Day</title>
+	<script type='text/javascript' src='jquery.js'></script>
+    
+	<link rel='stylesheet' type='text/css' href='style.css' />
+	<script type='text/javascript'>	
+			function loadXMLDoc(url) {
+				var var1 = '';
+				var xmlhttp;
+				if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+  					xmlhttp=new XMLHttpRequest();
+  				}
+				else {// code for IE6, IE5
+  					xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  				}
+				xmlhttp.onreadystatechange=function() {
+  					if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+   						document.getElementById("container").innerHTML=xmlhttp.responseText;
+    				}
+  				}
+				xmlhttp.open("GET",url);
+				xmlhttp.send();
+			}
+			
+				
+			function changeColor (letter, code) {
+				document.getElementById(letter).style.color = code;
+			}
+			
+			function showHide () {
+				$('#learn').animate({opacity: 1}, 500);
+				$('#c').animate({opacity: 1}, 500);
+				$('#learn2').animate({opacity: 1}, 500);
+				setTimeout("changeColor('c', '#3c92d8')", 1200);
+				setTimeout("$('#learn').animate({opacity: 0}, 500)", 1900);
+				setTimeout("$('#c').animate({marginLeft: '-50%', opacity: 0}, 500)", 2000);
+				setTimeout("$('#cImg').animate({opacity: 1}, 500)", 2000);
+				setTimeout("$('#learn2').animate({opacity: 0}, 500)", 1900);
+			}
+			
+			function showHide2 () {
+				$('#listen').animate({opacity: 1}, 500);
+				$('#s').animate({opacity: 1}, 500);
+				
+				$('#listen2').animate({opacity: 1}, 500);
+				setTimeout("changeColor('s', '#666666')", 1200);
+				setTimeout("$('#listen').animate({opacity: 0}, 500)", 1900);
+				setTimeout("$('#s').animate({marginLeft: '-28.8%', opacity: 0}, 500)", 2000);
+				setTimeout("$('#sImg').animate({opacity: 1}, 500)", 2000);
+				setTimeout("$('#listen2').animate({opacity: 0}, 500)", 1900);
+			}
+			
+	
+			function showHide3 () {
+				$('#network').animate({opacity: 1}, 500);
+				$('#e').animate({opacity: 1}, 500);
+				
+				$('#network2').animate({opacity: 1}, 500);
+				setTimeout("changeColor('e', '#ef8c2a')", 1200);
+				setTimeout("$('#network').animate({opacity: 0}, 500)", 1900);
+				setTimeout("$('#e').animate({marginLeft: '-43.9%', opacity: 0}, 500)", 2000);
+				setTimeout("$('#eImg').animate({opacity: 1}, 500)", 2000);
+				
+				setTimeout("$('#network2').animate({opacity: 0}, 500)", 1900);
+				
+			}
+			
+			function showHide4 () {
+				$('#all').animate({opacity: 1}, 500);
+				$('#day').animate({opacity: 1}, 500);
+				setTimeout("$('#all').animate({marginLeft: '-4.3%', opacity: 0}, 500)", 1400);
+				setTimeout("$('#day').animate({marginLeft: '-4.3%'}, 500)", 1400);
+			}
+			
+			
+			
+			function action () {
+				setTimeout("$('#cImg').animate({marginLeft: '80%', opacity: 0}, 800)", 300);
+				setTimeout("$('#sImg').animate({marginLeft: '100%', opacity: 0}, 800)", 300);
+				setTimeout("$('#eImg').animate({marginLeft: '80%', opacity: 0}, 800)", 300);
+				setTimeout("$('#day').animate({opacity: 0}, 400)", 300);
+				setTimeout("$('#skip').animate({opacity: 0}, 800)", 0);
+			}
+			
+			
+			function doThis () {
+				window.location="event.html";
+			}
+
+	</script>
+</head>
+<body onLoad="
+setTimeout('showHide()', 500);
+setTimeout('showHide2()', 2500);
+setTimeout('showHide3()', 4500);
+setTimeout('showHide4()', 6500);
+setTimeout('action()', 8700);
+setTimeout('doThis()', 10500);
+">
+
+	<div id="wrapper">
+	<div id="intro1">
+        	<div id="learn">learn about computer science </div><div id="c"> c</div><img id="cImg" src="images/C.png" /><div id="learn2"> orporations</div>
+        	
+            
+    </div>
+    
+    
+	<div id="intro2">
+        	<div id="listen">listen to a </div><div id="s"> s</div><img id="sImg" src="images/S.png" /><div id="listen2">eries of talks</div>
+            
+    </div>
+    
+    
+	<div id="intro3">
+        	<div id="network">network with coll</div><div id="e">e</div><img id="eImg" src="images/E.png" /><div id="network2">agues</div>
+        	
+    </div>
+
+	<div id="intro4">
+        	<div id="all">all in one</div>
+        	<div id="day">DAY</div>
+    </div>
+    
+    	<div id="intro5">
+            <a href="event.html" id="skip" onmouseover="self.status='';return true;">skip</a>
+    </div>
+   </div>
+    
+
+</body>
+</html>
+

@@ -48,8 +48,7 @@
 
   <h1>CSE Day 2014</h1>
 
-</div>
-
+</div><!-- jumbotron-->
 <!--content for the tabs-->
 <div class="tab-content">
 	<div class="tab-pane fade in active" id="about">
@@ -68,7 +67,7 @@
 	<!-- history modal (does not show until clicked)-->
 	<!-- TODO: put it in another file then laod modal with ajax-->
 	<div class="modal fade" id="history" tabindex="-1" role="dialog" aria-labelledby="history" aria-hidden="true">
-		<div class="modal-dialog" style="width:90%">
+		<div class="modal-dialog" style="width:85%">
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -86,12 +85,16 @@
 						<div class="tab-pane fade in active" id="hist-2013">
 						stuff happened
 						</div>
-						<div class="tab-pane fade in active" id="hist-2012">
+						<div class="tab-pane fade" id="hist-2012">
+						some other stuff happened
 						</div>
 					</div>
+				</div>
+				<!--
 				<div class="modal-footer">
 					<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
 				</div>
+				-->	
 			</div><!-- /.modal-content -->
 		</div><!-- /.modal-dialog -->
 	</div><!-- /.modal -->
@@ -108,12 +111,15 @@
 	<div class="tab-pane fade" id="contact">
 	<h1>Contact us</h1><hr>
 	</div>
-</div>          
+</div>  <!--tab content-->        
 </div>
       
 		</div><!--/container-->
 		
-	<div id="push"></div>	<!-- push everything to the bottom-->
+	<!--
+	sometimes you need it, sometomes you don't.
+	<div id="push"></div>	push everything to the bottom
+	-->
     </div><!--/wrap-->
     
     <!-- footer-->
@@ -135,12 +141,13 @@
 		function() {
 			if (location.hash !== '') {
 				$('a[href="' + location.hash + '"]').tab('show');
-    				return $('a[data-toggle="tab"]').on('shown', function(e) {
+    				return $('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
       				return location.hash = $(e.target).attr('href').substr(1);
     				});
     		}
 	});
 	</script>
+	
 
     </body>
 </html>

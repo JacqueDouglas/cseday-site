@@ -19,7 +19,7 @@
         <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
                 
         <!--CSS-->
-		<style type="text/css" media="screen" title="matt">
+		<style type="text/css" media="screen" title="cseday">
 		@import "//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css";
 		@import "//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css";
 		@import "./assets/style.css";
@@ -37,7 +37,7 @@
 <!--begin page content-->
 <!--navigation-->
   <ul class="nav nav-pills nav-justified" id="menu">
-  <li><a href="#about" data-toggle="tab">About</a></li>
+  <li class="active"><a href="#about" data-toggle="tab">About</a></li>
   <li><a href="#schedule" data-toggle="tab">Schedule of Events</a>
   <li><a href="#jeopardy" data-toggle="tab">Jeopardy</a></li>
   <li><a href="#directions" data-toggle="tab">Directions</a></li>
@@ -63,7 +63,38 @@
 	</div>
 	
 	<div class="tab-pane fade" id="schedule">
-	<h1>Schedule of Events<small><a href="history.html" class="pull-right">Past events</a></small></h1><hr>
+	<h1>Schedule of Events<small class="pull-right"><a data-toggle="modal" data-target="#history">Past events</a></small></h1><hr>
+	
+	<!-- history modal (does not show until clicked)-->
+	<!-- TODO: put it in another file then laod modal with ajax-->
+	<div class="modal fade" id="history" tabindex="-1" role="dialog" aria-labelledby="history" aria-hidden="true">
+		<div class="modal-dialog" style="width:90%">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h2 class="modal-title">Past events 
+					<small class="pull-right">
+					<ul class="nav nav-pills pull-right" id="year">
+				  	<li class="active"><a href="#hist-2013" data-toggle="tab">2013</a></li>
+				  	<li><a href="#hist-2012" data-toggle="tab">2012</a></li>
+				  	</ul>
+					</small>
+					</h2>
+				</div>
+				<div class="modal-body">
+					<div class="tab-content">
+						<div class="tab-pane fade in active" id="hist-2013">
+						stuff happened
+						</div>
+						<div class="tab-pane fade in active" id="hist-2012">
+						</div>
+					</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
 	</div>
 	 
 	<div class="tab-pane fade" id="jeopardy">
@@ -78,7 +109,7 @@
 	<h1>Contact us</h1><hr>
 	</div>
 </div>          
-
+</div>
       
 		</div><!--/container-->
 		
@@ -99,6 +130,18 @@
 	<!--JavaScript-->
 	<script src="//code.jquery.com/jquery-latest.min.js"></script>	
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+	<script>
+	$(document).ready(
+		function() {
+			if (location.hash !== '') {
+				$('a[href="' + location.hash + '"]').tab('show');
+    				return $('a[data-toggle="tab"]').on('shown', function(e) {
+      				return location.hash = $(e.target).attr('href').substr(1);
+    				});
+    		}
+	});
+	</script>
+
     </body>
 </html>
 

@@ -1,16 +1,13 @@
 html,body {height: 100%;font-size: 16px;}
-header {padding: 0 0 7px 0}
-
-#wrap {min-height: 100%;
- min-height: 100%;
+#wrap {
+ 		min-height: 100%;
         height: auto !important;
         height: 100%;
-        /* Negative indent footer by it's height */
-        margin: 0 auto -61px;
-}
+	/* Negative indent footer by it's height */
+        margin: 0 auto -60px;
+        }
 
 /* Set the fixed height of the footer here */
-#push,footer {height: 60px;}
-footer {background-color: #eeeeee;} /*same color as the hero unit*/
-#footer-container {padding: 20px 0px;}
+#push,footer {height: 60px;} /*same color as the hero unit*/
+#footer-container {padding: 20px 0px;background-color: #eeeeee;}
 

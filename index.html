@@ -24,7 +24,6 @@
 		@import "//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css";
 		@import "./assets/style.css";
 		</style>
-	<script src="./assets/cseday.js"></script>
 	</head>
     
     <body>
@@ -266,6 +265,7 @@ Have you ever wonder what's it like to work at a start-up? Ever wonder why peopl
 	 
 		<div class="tab-pane fade" id="jeopardy">
 		<h1>Jeopardy</h1><hr>
+			<p><iframe src="https://docs.google.com/forms/d/1VUIkzs-2uhac4CClnfeqGUBqPI4zNOajxfIOzh1rON4/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe></p>
 		</div>
 		
 		<div class="tab-pane fade" id="directions">
@@ -289,8 +289,13 @@ Have you ever wonder what's it like to work at a start-up? Ever wonder why peopl
 	<div id="push"></div>    
     </div><!--/wrap-->
     <!-- footer--> 
-    <footer>
-    	<div class="row" id="sponsors">
+    <footer class="footer">
+    <div id="footer-container">
+    	<div class="container">
+    	<a href="//cses.ucsd.edu"> UCSD CSES</a>
+    	</div><!--/container-->
+    </div><!--/footer-container-->
+    <div class="row" id="sponsors footer-container">
 		<div class="container">
 		<div class="col-md-3"><a href="//microsoft.com"><img class="sponsor" src="assets/microsoft.png" alt="Microsoft"></a></div>
 		<div class="col-md-3"><a href="//cisco.com"><img class="sponsor" src="assets/cisco.png" alt="Cisco"></a></div>
@@ -299,18 +304,14 @@ Have you ever wonder what's it like to work at a start-up? Ever wonder why peopl
 		<div class="col-md-3"><a href="//salesforce.com"><img class="sponsor" src="assets/salesforce.png" alt="Salesforce"></a></div>
 		<div class="col-md-3"><a href="//google.com"><img class="sponsor" src="assets/google.png" alt="Google"></a></div>
 		</div>
-	</div>
-    <div id="footer-container">
-    	<div class="container">
-    	<a href="//cses.ucsd.edu"> UCSD CSES</a>
-    	</div><!--/container-->
-    </div><!--/footer-container-->
+		</div>
     </footer> <!--/footer-->
 
 
 	<!--JavaScript-->
 	<script src="//code.jquery.com/jquery-latest.min.js"></script>	
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+	<script src="/assets/cseday.js"></script>
 	<script>
 	$(document).ready(
 		function() {

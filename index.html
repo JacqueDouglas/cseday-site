@@ -36,8 +36,9 @@
 	<div class="navbar navbar-fixed-top" style="height:40px;background:white;">
 	<div class="container">
 	  <ul class="nav nav-pills nav-justified" id="menu">
-	  <li class="active"><a href="#about" data-toggle="tab">About</a></li>
-	  <li><a href="#schedule" data-toggle="tab">Schedule of Events</a>
+	  <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+	  <li><a href="#about" data-toggle="tab">About</a></li>
+	  <li><a href="#schedule" data-toggle="tab">Schedule of Events</a></li>
 	  <li><a href="#jeopardy" data-toggle="tab">Jeopardy</a></li>
 	  <li><a href="#directions" data-toggle="tab">Directions</a></li>
 	  <li><a href="#contact" data-toggle="tab">Contact</a></li>
@@ -50,19 +51,90 @@
 	</div><!-- jumbotron-->
 	<!--content for the tabs-->
 	<div class="tab-content">
-		<div class="tab-pane fade in active" id="about">
-	
-		<h1>About</h1><hr>
-		<p>CSE Day is a day for all Computer Science, Computer Engineering, and anyone interested about CSE to come learn about the many opportunities they possess, be it in industry or in academia.</p>
-		
-		<p>The day will be dedicated to a series of talks and panels where students are encouraged to ask whatever question pops into their mind about their CSE education. We also will be raffling company swag throughout the day and offering lunch and dinner!</p>
-
+		<div class="tab-pane fade in active" id="home">
+		<p> CSE Day has become a signature event for the Department and the Computer Science & Engineering Society. The day is dedicated to the passion and education of all who are interested in Computer Science & Engineering and highlighting the broadest of opportunities, be it in industry or academia. Our goal this year is to show students the different paths available to them in the future and how to navigate those choices based on others' real-world experiences.</p>
+		<p>We welcome you to become a part of this growing tradition that undoubtedly influences the bright minds that will drive the next generation of CSE innovation to society and to your corporation.  Our students thrive on the new technologies and frontiers that are uniquely associated with Computer Science.  Over 250 students consistently attend CSE Day and attendance has doubled over the past three years.  Your participation as a sponsor will provide students invaluable information on the different paths and technologies open to them as they develop themselves within Computer Science.</p>
 		<p>The event will take place on <strong>Thursday, January 23, 2014</strong> in <a href="#directions" data-toggle="tab">CSE 1202</strong></a>. Hope to see you all there!</p>
 		</div>
+
+		<div class="tab-pane fade" id="about">
+		<h1>About&nbsp;<small>History of CSE day</small></h1><hr>
+		<h2>CSES board</h2><hr>
+			<div class="row">
+			<div class="col-md-3"><a href="#" class="load" data-toggle="popover"><img src="..." alt="..." class="img-rounded"></a> <p><b>NAME</b></p><p>POSITION</p>
+			<div class="head hide">NAME</div>
+    		<div class="content hide">OTHER STUFF</div>
+			</div>
+			<div class="col-md-3"><a href="#" class="load" data-toggle="popover"><img src="..." alt="..." class="img-rounded"></a> <p><b>NAME</b></p><p>POSITION</p>
+			<div class="head hide">NAME</div>
+    		<div class="content hide">OTHER STUFF</div>
+			</div>
+			<div class="col-md-3"><a href="#" class="load" data-toggle="popover"><img src="..." alt="..." class="img-rounded"></a> <p><b>NAME</b></p><p>POSITION</p>
+			<div class="head hide">NAME</div>
+    		<div class="content hide">OTHER STUFF</div>
+			</div>
+			<div class="col-md-3"><a href="#" class="load" data-toggle="popover"><img src="..." alt="..." class="img-rounded"></a> <p><b>NAME</b></p><p>POSITION</p>
+			<div class="head hide">NAME</div>
+    		<div class="content hide">OTHER STUFF</div>
+			</div>
+			</div>
+			<script>
+				$(document).ready(function() {
+					$('.pop>.load').popover({
+					html: true,
+					title: function () {
+						return $(this).parent().find('.head').html();
+					},
+					content: function () {
+					return $(this).parent().find('.content').html();
+				}});});
+			</script>
+		</div>
+		
 	
 		<div class="tab-pane fade" id="schedule">
-		<h1>Schedule of Events<small class="pull-right"><a data-toggle="modal" data-target="#history">Past events</a></small></h1><hr>
-	
+		<h1>Schedule of Events&nbsp;<small>Thursday, January 23, 2014</small><small class="pull-right"><a data-toggle="modal" data-target="#history">Past events</a></small></h1><hr>
+			<h4><a data-toggle="collapse" data-parent="#schedule" href="#2014-00">Startups 101</a><small class="pull-right">11:00am - 12:00pm</small></h4>
+			<div id="2014-00" class="collapse">
+			In this panel of startup companies come find out what makes startups special and what leads to their creation.  Get the unique opportunity to ask questions and find out why startups are some of the most dynamic and interesting places to work.
+    		</div>
+			<h4><a data-toggle="collapse" data-parent="#schedule" href="#2014-01">Lunch & Club Presentations</a> <small class="pull-right">12:00pm - 12:50pm</small></h4>
+			<div id="2014-01" class="collapse">
+			Grab some In-N-Out and hear about the different clubs in the CSE Department.
+    		</div>
+			<h4><a data-toggle="collapse" data-parent="#schedule" href="#2014-02">Life Tech Talk (Working Title)</a><small class="pull-right">1:00pm - 1:25pm</small></h4>
+			<div id="2014-02" class="collapse">
+			TBA
+    		</div>
+			<h4><a data-toggle="collapse" data-parent="#schedule" href="#2014-03">Paths in Computer Science (Working Title)</a><small class="pull-right">1:35pm - 2:20pm</small></h4>
+			<div id="2014-03" class="collapse">
+			Come find out the many different paths that undergraduates from our very own department have taken. From working their way to work at google, to graduate school to become a professor the possibilities are endless.  Our panel of 4 ucsd alumni have truly seized the day and have amazing stories to share with us.
+    		</div>
+			<h4><a data-toggle="collapse" data-parent="#schedule" href="#2014-04">ABCs of Software Engineering (Working Title)</a><small class="pull-right">2:25pm - 3:25pm</small></h4>
+			<div id="2014-04" class="collapse">
+			Ever wonder what you wanted to do with your CS degree in the field?  Come find all of the amazing things you can do from front-end development, to software security.  Truly find out all the reasons that make each position the best place to be working.
+    		</div>
+			<h4><a data-toggle="collapse" data-parent="#schedule" href="#2014-05">The Secrets of Recruitment Q/A</a><small class="pull-right">3:30pm - 4:10pm</small></h4>
+			<div id="2014-05" class="collapse">
+			Ever wonder the secrets of recruitment? Wonder no more, with this expert panel of recruiters who are here to answer your questions about standing out, acing the interview, and the getting the internship.  
+    		</div>
+			<h4><a data-toggle="collapse" data-parent="#schedule" href="#2014-06">Faculty Speaker (Title TBA)</a><small class="pull-right">4:15pm - 5:10pm</small></h4>
+			<div id="2014-06" class="collapse">
+			TBA
+    		</div>
+			<h4><a data-toggle="collapse" data-parent="#schedule" href="#2014-07">Qualcomm Tech Talk (Title TBA)</a><small class="pull-right">5:20pm - 5:45pm</small></h4>
+			<div id="2014-07" class="collapse">
+			TBA
+    		</div>
+			<h4><a data-toggle="collapse" data-parent="#schedule" href="#2014-08">Industry Dinner</a><small class="pull-right">6:00pm - 6:50pm</small></h4>
+			<div id="2014-08" class="collapse">
+			Come have a delicious meal and be able to talk to the recruiters and software engineers.  This is the perfect chance to be able to learn more about the companies and the secrets to get an internship or job at their company.
+    		</div>
+			<h4><a data-toggle="collapse" data-parent="#schedule" href="#2014-09">Jeopardy</a><small class="pull-right">7:00pm - 8:00pm</small></h4>
+			<div id="2014-09" class="collapse">
+			We bring back our annual jeopardy event! Come take on faculty members on a battle of wits. Outsmart those professors that claim to know it all, and show them who really knows computer science. Come play a game of jeopardy about computer science and win some free swag!	
+    		</div>
+		
 		<!-- history modal (does not show until clicked)-->
 		<!-- TODO: put it in another file then laod modal with ajax-->
 		<div class="modal fade" id="history" tabindex="-1" role="dialog" aria-labelledby="history" aria-hidden="true">
@@ -70,20 +142,115 @@
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						<h2 class="modal-title">Past events 
+						<h2 class="modal-title">Past events&nbsp;<small id="writedate">January 23, 2013</small> <!--put default date to load here-->
 						<small class="pull-right">
 						<ul class="nav nav-pills pull-right" id="year">
-						<li class="active"><a href="#hist-2013" data-toggle="tab">2013</a></li>
-						<li><a href="#hist-2012" data-toggle="tab">2012</a></li>
+						<li class="active"><a href="#hist-2013" data-toggle="tab" onClick="document.getElementById('writedate').innerHTML = 'January 23, 2013'">2013</a></li>
+						<li><a href="#hist-2012" data-toggle="tab" onClick="document.getElementById('writedate').innerHTML = 'May 4, 2012'">2012</a></li>
 						</ul>
 						</small>
 						</h2>
 					</div>
 					<div class="modal-body">
 						<div class="tab-content">
-							<div class="tab-pane fade in active" id="hist-2013">hello</div>
+							<div class="tab-pane fade in active" id="hist-2013">
+								<h4><a data-toggle="collapse" data-parent="#schedule" href="#2013-00">Startup Panel</a><small class="pull-right">11:00am - 12:00pm</small></h4>
+								<div id="2013-00" class="collapse">
+Have you ever wonder what's it like to work at a start-up? Ever wonder why people choose start-ups over larger companies? Then the start-up panel will be for you. This panel will contain engineers from several different start-ups, and will discuss the big differences between them and larger companies.    
+								</div>
+								<h4><a data-toggle="collapse" data-parent="#schedule" href="#2013-01">Life Technologies Mobility Talk</a> <small class="pull-right">12:05pm - 12:25pm</small></h4>
+								<div id="2013-01" class="collapse">
+								<p> Come and seat in an interesting talk from John Stevens. from <a href="http://www.lifetechnologies.com/us/en/home.html">Life Technologies Corporation</a>. Life Technologies is a global biotechnology tools company dedicated to improving the human condition with innotative life science products.
+</p> 
+								</div>
+								<h4><a data-toggle="collapse" data-parent="#schedule" href="#2013-02">Graduate Students & Alumni Panel</a><small class="pull-right">12:30pm - 12:55pm</small></h4>
+								<div id="2013-02" class="collapse">
+								Come, learn, and experience what it is like to be a graduate student? What are UCSD alumni doing now? Come ask pertaining questions to the panel and you may be rewarded with some swag!
+								</div>
+								<h4><a data-toggle="collapse" data-parent="#schedule" href="#2013-03">Cloud Computing</a><small class="pull-right">12:55pm - 1:15pm</small></h4>
+								<div id="2013-03" class="collapse">
+								Come and seat in an interesting talk about cloud computing from <a href="http://www.lifetechnologies.com/us/en/home.html">Life Technologies</a> by Sean Baumann. Life Technologies is a global biotechnology tools company dedicated to improving the human condition with innotative life science products.
+								</div>
+								<h4><a data-toggle="collapse" data-parent="#schedule" href="#2013-04">NetLunch</a><small class="pull-right">1:15pm - 1:50pm</small></h4>
+								<div id="2013-04" class="collapse">
+								What is NetLunch? NetLunch is a event where students come out and eat In-n-Out Burgers, while at the same time networking with graduate students, alumni, start-up companies, etc. Please feel free to bring along some resumes!
+								</div>
+								<h4><a data-toggle="collapse" data-parent="#schedule" href="#2013-05">Faculty Speaker ("Embedded Computer Vision")</a><small class="pull-right">2:00pm - 2:40pm</small></h4>
+								<div id="2013-05" class="collapse">
+								Speaker's Abstract: Cameras are ubiquitous and with computation becoming increasingly cheaper and more powerful, there are substantial opportunities for sophisticated image and video analysis. Professor <a href="http://cseweb.ucsd.edu/~kastner/biography">Ryan Kastner</a> will describe several ongoing projects in his research group related to biomedical imaging, robotics, underwater monitoring, remote imaging, and human-computer interaction.  
+								</div>
+								<h4><a data-toggle="collapse" data-parent="#schedule" href="#2013-06">Get that Tech Career!</a><small class="pull-right">2:50pm - 3:45pm</small></h4>
+								<div id="2013-06" class="collapse">
+								A panel of recruiters from companies, including <a href="http://www.lifetechnologies.com/us/en/home/about-us/careers.html">Life Technologies</a>, <a href="http://careers.intuit.com">Intuit</a>, <a href="http://www.salesforce.com/careers/university/">SalesForce</a>, <a href="http://www.sonyentertainmentnetwork.com/home/">Sony Entertainment Network</a>, and <a href="http://www.aristanetworks.com/en/careers">Arista Networks</a> that are here to answer any pertaining questions. Do they offer any software engineering internships? How should I best prepare myself before DECaF? What is the interview process like? A great panel to attend to prepare yourself for DECaF (The Disciplines of Engineering Career Fair), a multidisciplinary career fair held in February.
+								</div>
+								<h4><a data-toggle="collapse" data-parent="#schedule" href="#2013-07">Project Fair / Dinner</a><small class="pull-right">4:00pm - 5:00pm</small></h4>
+								<div id="2013-07" class="collapse">
+								Come join and see student projects going on throughout the Computer Science and Engineering Department, clubs, and industry. Project List will come out soon!
+								</div>
+								<h4><a data-toggle="collapse" data-parent="#schedule" href="#2013-08">Jeopardy</a><small class="pull-right">5:30pm - 6:30pm</small></h4>
+								<div id="2013-08" class="collapse">
+								We bring back our annual jeopardy event!  Come take on faculty members on a battle of wits.  Outsmart those professors that claim to know it all, and show them who really knows computer science.  Come play a game of jeopardy about computer science and win some free swag!
+								</div>
+							</div>
 							<div class="tab-pane fade" id="hist-2012">
-							some other stuff happened
+								<h4><a data-toggle="collapse" data-parent="#schedule" href="#2012-00">Startup Panel</a><small class="pull-right">11:00am - 12:00pm</small></h4>
+								<div id="2012-00" class="collapse">
+								<b>Startups attending:</b><br>
+								<a href="http://www.xpenser.com">Xpenser</a><Br>
+								<a href="http://www.primacinema.com/">Prima Cinema</a><br>
+								<a href="http://tapchow.com/">TapChow</a><br>
+								<a href="http://www.taaz.com/">Taaz</a><br>
+								<a href="http://www.gelbergroup.com/Gelber_Group/Home.html">Gelber group</a><br>    
+								</div>
+								<h4><a data-toggle="collapse" data-parent="#schedule" href="#2012-01">Lunch & Networking</a> <small class="pull-right">12:05pm - 1:30pm</small></h4>
+								<div id="2012-01" class="collapse">
+								<p>Want to get some experience, but don't know where to start? Get an idea by listening to you UCSD undergraduates talk about their internship and research experience. Find out what you need to get that dream internship or research position, or get some idea on where you might like to work.</p> 
+								</div>
+								<h4><a data-toggle="collapse" data-parent="#schedule" href="#2012-02">Industry Panel</a><small class="pull-right">1:30pm - 2:30pm</small></h4>
+								<div id="2012-02" class="collapse">
+								<b>Companies Attending:</b><br>
+								<a href="http://www.facebook.com">Facebook</a><br>
+								<a href="http://www.northropgrumman.com">Northrop Grumman</a><br>
+								<a href="http://www.cisco.com">Cisco</a><br>
+								<a href="http://www.qualcomm.com">Qualcomm</a><br>
+								<a href="http://www.lifetechnologies.com/">Life Technologies</a><br>
+								</div>
+								<h4><a data-toggle="collapse" data-parent="#schedule" href="#2012-03">Faculty Speaker</a><small class="pull-right">2:40pm - 3:30pm</small></h4>
+								<div id="2012-03" class="collapse">
+								<p>Come listen to Professor <a href="//goto.ucsd.edu/~rjhala">Ranjit Jhala</a> talk about his research and interesting topics in Computer Science and Engineering. Topic and abstract to be determined soon, so check back!</p>
+								<p>
+								<b>Information Flow Analysis for JavaScript Web Applications</b>
+								</br>(Joint work with Ravi Chugh, Jeff Meister, Don Jang, Sorin Lerner and Hovav Shacham)
+								</p>
+								<p>Information flow control can offer important security and privacy benefits
+								in the context of JavaScript based web applications that dynamically load
+								third-party code which can steal or corrupt important client information.
+								These benefits have not yet been reaped due to the challenging nature of
+								analyzing JavaScript code. In this talk, we describe some approaches to
+								analyzing JavaScript to enforce flow control. We highlight some of the
+								(many!) challenges that must be addressed in order to analyze real-world
+								JavaScript. Finally, we describe results from an empirical investigation
+								of various security and privacy violating flows on a large number of
+								popular websites.
+								</p>
+								</div>
+								<h4><a data-toggle="collapse" data-parent="#schedule" href="#2012-04">Undergrad, Grad, and Alumni Speed Dating</a><small class="pull-right">3:35pm - 4:45pm</small></h4>
+								<div id="2012-04" class="collapse">
+								<p>Wonder what life's like after you graduate?</p>
+                        		<p>Come to the industry panel and find out directly from Software Engineers from Google, Amazon, Northrop Grumman, and more. Learn about what they look for in interns or new hires, what the interview process is life, what you can expect out of a job at their companies, and any other question you can think of!</p>
+                        		</div>
+								<h4><a data-toggle="collapse" data-parent="#schedule" href="#2012-05">Dinner & Project Fair</a><small class="pull-right">5:00pm - 6:00pm</small></h4>
+								<div id="2012-05" class="collapse">
+								<p>The project and poster fair will be a chance for CSES and other CSE students to show of the hardword they've put into projects throughout the year. Featured projects will be the CSES Multitouch table and the LISP game engine.</p>
+								<p>LISP game engine - Thopter</p>
+								<p>CSES Tweenbot Project</p>
+								<p>CSES Multitouch Project</p>
+								<p>Special Interest Groups - Embedded Systems and Computation Theory</p>   
+								</div>
+								<h4><a data-toggle="collapse" data-parent="#schedule" href="#2012-06">Jeopardy</a><small class="pull-right">6:00pm - 7:00pm</small></h4>
+								<div id="2012-06" class="collapse">
+								<p>Come participate in the annual student vs faculty Jeopardy battle! There might even be some awesome swag for the winners! Please <a href='javascript: change("register");'>register</a> if you're interested in participating!</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -100,6 +267,7 @@
 		<div class="tab-pane fade" id="jeopardy">
 		<h1>Jeopardy</h1><hr>
 		</div>
+		
 		<div class="tab-pane fade" id="directions">
 		<h1>Directions and Parking <small>for CSE day 2014</small></h1><hr>
 		<p><b>Address:</b> Engineer Lane, University of California San Diego, San Diego, CA 92161</p>
@@ -113,39 +281,28 @@
 	
 		<div class="tab-pane fade" id="contact">
 		<h1>Contact us</h1><hr>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam elementum lacus non libero hendrerit dapibus. Donec tempor, odio vitae adipiscing porta, sapien diam bibendum erat, non aliquet orci nisi et ligula. Morbi malesuada sed arcu ac tincidunt. Integer fermentum eu ipsum sed tempor. Praesent non hendrerit tellus. Curabitur nec leo id ipsum viverra imperdiet. Vestibulum in urna nunc. Duis ultrices, nisl eu pulvinar accumsan, diam nibh pretium tellus, nec ultricies nisi ligula ac libero. Nullam cursus nisi ac placerat tincidunt.
-
-	Proin interdum eros vel sem rhoncus faucibus. Nulla ac vestibulum dui. Quisque posuere auctor diam, non accumsan diam mollis vel. Cras pellentesque leo non nunc pulvinar, nec porttitor sapien adipiscing. Duis venenatis magna lobortis iaculis dignissim. Proin ultrices in enim id pharetra. Fusce cursus a quam vel tincidunt. Duis sed nisl vitae mauris viverra tristique non sit amet nulla. Ut sed nulla diam. Vestibulum quis interdum arcu, et imperdiet magna. Maecenas pretium feugiat tincidunt. Nunc a auctor felis. Vestibulum a tortor vitae dui scelerisque viverra ut sit amet ante. Vestibulum interdum sagittis viverra. Fusce fringilla volutpat tellus, tristique volutpat augue ultrices ac.
-
-	Nullam in consectetur ante. Sed lectus lectus, mollis eget velit id, rhoncus rutrum ante. Sed fermentum pharetra tellus, eu hendrerit mauris lobortis non. In hac habitasse platea dictumst. Curabitur in justo a nisl euismod lacinia vitae id sem. Praesent porttitor a sem vitae blandit. Phasellus rhoncus congue risus id tincidunt.
-
-	Pellentesque consequat nulla magna, eget sodales enim fermentum non. Pellentesque a velit vel purus tincidunt condimentum. Integer tincidunt ipsum in velit tristique, sed consequat urna fermentum. Proin sit amet felis sit amet massa laoreet eleifend. Integer fringilla condimentum mauris, quis blandit leo laoreet vel. Fusce vel tellus a orci fringilla semper. Nulla accumsan libero vitae consectetur luctus. Nulla vel mattis dui, id tincidunt velit. Nulla in condimentum risus, in blandit ligula. Cras ultrices erat sit amet sagittis faucibus.
-
-	Pellentesque nisl elit, pretium non fringilla quis, molestie et ligula. Sed suscipit tristique ante ac porta. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin faucibus, turpis posuere consectetur convallis, sem diam tristique tellus, consectetur aliquet diam diam ut libero. Nullam eget lacus hendrerit, imperdiet tellus vel, imperdiet tortor. Mauris eget ante non libero rutrum molestie id et turpis. Curabitur leo nisi, egestas vestibulum tortor at, faucibus vulputate augue. Aenean felis dui, porta eu dolor et, ultrices ullamcorper ligula. Praesent suscipit est sit amet scelerisque ullamcorper. Sed consequat arcu sed nisi vulputate sodales. Pellentesque interdum, ante eget scelerisque laoreet, leo risus rhoncus lectus, non ultrices est felis vel velit.
-
-	Fusce venenatis lorem et leo condimentum tincidunt. Phasellus luctus vehicula purus non imperdiet. Mauris sed accumsan massa. Duis a sodales metus. Cras et erat sit amet lacus gravida rutrum. Nullam commodo, sem nec placerat tincidunt, diam purus tincidunt libero, eu dictum turpis sem sit amet tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus magna velit, pharetra eu mollis vel, aliquet nec velit. Praesent iaculis magna ut arcu adipiscing vulputate. Aenean quis leo non dolor semper fermentum. Aenean et placerat erat, vel tempor ipsum. Donec gravida dignissim ligula ac ultrices. Etiam commodo erat ac pretium vulputate. Integer tincidunt mi ipsum, suscipit semper neque egestas et. Sed quis blandit risus. In vulputate posuere libero, et tincidunt augue mollis in.
-
-	Vestibulum sagittis vitae ante a congue. In hac habitasse platea dictumst. Integer gravida justo et elit egestas, sed adipiscing tellus gravida. Vestibulum luctus, sem sit amet mattis semper, lectus orci vulputate augue, in imperdiet ipsum arcu id lorem. Nunc luctus volutpat vulputate. In euismod congue convallis. Mauris semper sagittis sapien, nec auctor mi tincidunt at. Cras ut lacus nisl. Duis orci augue, consectetur vel consectetur quis, convallis ut mauris. Integer elementum imperdiet nunc non fringilla. Nam scelerisque, ante nec gravida viverra, tortor mi pellentesque velit, eget tempor dolor magna eu urna. Curabitur ac tincidunt urna. Maecenas lobortis suscipit leo, quis suscipit nulla aliquet nec. Donec posuere accumsan ligula, eu porttitor nulla facilisis ut. In iaculis sed justo quis porta.
-
-	Donec gravida mauris ut elit aliquet condimentum. Nam imperdiet dolor nec metus dignissim laoreet. Maecenas turpis dui, gravida vel accumsan sit amet, cursus ut dui. Nunc ut justo ac velit bibendum pretium et nec magna. Fusce porttitor metus neque, vitae varius massa porta non. Phasellus vitae mi iaculis, ultrices quam ornare, congue dui. Aliquam ut viverra felis. Integer lobortis elementum ultrices. Etiam eros enim, volutpat vitae pharetra vitae, auctor quis arcu. Ut id nunc metus. Sed aliquam purus vitae aliquet hendrerit. Sed sapien felis, sollicitudin vitae turpis vel, sagittis eleifend lectus. Nulla at leo non diam faucibus condimentum. Etiam commodo, ipsum posuere pellentesque accumsan, orci neque lacinia ligula, et vestibulum risus nisl non orci. Quisque eu tellus vitae arcu mollis iaculis. Suspendisse vel sollicitudin est, sed porta nulla.
-
-	Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec mollis consequat justo, in dignissim metus tempor ac. Praesent sagittis, massa at bibendum pulvinar, tortor risus vestibulum erat, nec congue justo lectus ut eros. Donec ut egestas ipsum. Vivamus quis risus quis tortor adipiscing aliquam non non lorem. Aliquam mollis est lectus, vitae fringilla arcu rutrum ac. Duis faucibus fringilla enim, vitae lobortis lorem scelerisque in. Sed et ornare augue. Sed vehicula ligula sit amet lectus aliquet venenatis ac ut enim. Nullam luctus lobortis ipsum, lacinia vehicula sem vehicula at. Suspendisse tincidunt convallis eros sed tincidunt. Sed iaculis enim non fringilla hendrerit. Nulla et sem vestibulum, posuere mi vel, vestibulum erat. Donec molestie malesuada adipiscing.
-
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum vitae tortor a tristique. Integer sit amet facilisis diam, eget condimentum magna. Vivamus bibendum blandit odio sed sodales. Sed id porttitor est. Curabitur ac dictum mi. Curabitur adipiscing luctus velit, nec fringilla risus dignissim at. Mauris malesuada elit eu augue eleifend convallis. Curabitur viverra justo id interdum interdum. Nam suscipit viverra leo. Nam dictum tincidunt tellus, id convallis odio aliquam eget. Vestibulum iaculis eu tellus sed tempus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-	</p>
 		</div>
+		
 	</div>  <!--tab content-->    
 	</div><!--margin-->
-	</div><!--/container-->      
+	</div><!--/container-->  
 	<div id="push"></div>    
     </div><!--/wrap-->
     <!-- footer--> 
     <footer>
+    	<div class="row" id="sponsors">
+		<div class="container">
+		<div class="col-md-3"><a href="//microsoft.com"><img class="sponsor" src="assets/microsoft.png" alt="Microsoft"></a></div>
+		<div class="col-md-3"><a href="//cisco.com"><img class="sponsor" src="assets/cisco.png" alt="Cisco"></a></div>
+		<div class="col-md-3"><a href="//lifetech.com"><img class="sponsor" src="assets/lifetech.png" alt="Lifetech"></a></div>
+		<div class="col-md-3"><a href="//qualcomm.com"><img class="sponsor" src="assets/qualcomm.png" alt="Qualcomm"></a></div>
+		<div class="col-md-3"><a href="//salesforce.com"><img class="sponsor" src="assets/salesforce.png" alt="Salesforce"></a></div>
+		<div class="col-md-3"><a href="//google.com"><img class="sponsor" src="assets/google.png" alt="Google"></a></div>
+		</div>
+	</div>
     <div id="footer-container">
     	<div class="container">
     	<a href="//cses.ucsd.edu"> UCSD CSES</a>
-    	put the sponsor info here like this 
-    	http://webdesign.tutsplus.com/tutorials/site-elements/reveal-content-when-needed-with-an-expanding-footer/
     	</div><!--/container-->
     </div><!--/footer-container-->
     </footer> <!--/footer-->

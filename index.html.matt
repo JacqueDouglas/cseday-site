@@ -46,8 +46,8 @@
 	  </div>
 	</div>
 	<div style="margin-top:50px">
-	<div class="jumbotron" id="title">
-	  <h1>CSE Day 2014</h1>
+	<div id="title">
+	  <img src="assets/headerlogo.png" alt="CSE Day 2014 Website" class="img-rounded" style="margin-bottom: .5cm;">
 	</div><!-- jumbotron-->
 	<!--content for the tabs-->
 	<div class="tab-content">
@@ -282,28 +282,6 @@ Have you ever wonder what's it like to work at a start-up? Ever wonder why peopl
 	
 		<div class="tab-pane fade" id="contact">
 		<h1>Contact us</h1><hr>
-		<center>
-    <h1>Computer Science and Engineering Society</h1>
-</center>
-<br />
- <h2>Corporate Affiliates Program</h2>
- <strong>Cody Noghera</strong>
-<br />Deputy Director
-<br /> <a href="mailto:cnoghera@ucsd.edu">cnoghera@ucsd.edu</a>
-<br />Phone: (858) 246-0214
-<br /> <a href="http://www.jacobsschool.ucsd.edu/external/external_cap/">Corporate Affiliates Program</a>
-
- <h2>CSE Day</h2>
- <strong>Timothy Kua</strong>
-<br />CSE Day Co-Chair
-<br /> <a href="mailto:tkua@ucsd.edu">tkua@ucsd.edu</a>
-<br /> <a href="http://cses.ucsd.edu/cseday/">CSE Day</a>
-<br />
-<br /> <strong>Jacque Douglas</strong>
-<br />CSE Day Co-Chair
-<br /> <a href="mailto:jd45093@gmail.com">jd45093@gmail.com</a>
-<br /> <a href="http://cses.ucsd.edu/cseday/">CSE Day</a>
-<br />
 		</div>
 		
 	</div>  <!--tab content-->    
@@ -313,22 +291,19 @@ Have you ever wonder what's it like to work at a start-up? Ever wonder why peopl
     </div><!--/wrap-->
     <!-- footer--> 
     <footer class="footer">
-    <div id="footer-container">
-    	<div class="container">
-    	<a href="//cses.ucsd.edu"> UCSD CSES</a>
-Sponsored by:
-    	</div><!--/container-->
-    </div><!--/footer-container-->
-    <div class="row" id="sponsors footer-container">
+    <div class="row" id="footer-container">
 		<div class="container">
+		<div class="col-md-12"><a href="//cses.ucsd.edu"> UCSD CSES</a></div>
+		<div class="text-center">
 		<div class="col-md-3"><a href="//microsoft.com"><img class="sponsor" src="assets/microsoft.png" alt="Microsoft"></a></div>
 		<div class="col-md-3"><a href="//cisco.com"><img class="sponsor" src="assets/cisco.png" alt="Cisco"></a></div>
 		<div class="col-md-3"><a href="//lifetech.com"><img class="sponsor" src="assets/lifetech.png" alt="Lifetech"></a></div>
 		<div class="col-md-3"><a href="//qualcomm.com"><img class="sponsor" src="assets/qualcomm.png" alt="Qualcomm"></a></div>
-		<div class="col-md-6"><a href="//salesforce.com"><img class="sponsor" src="assets/salesforce.png" alt="Salesforce"></a></div>
-		<div class="col-md-6"><a href="//google.com"><img class="sponsor" src="assets/google.png" alt="Google"></a></div>
+		<div class="col-md-3"><a href="//salesforce.com"><img class="sponsor" src="assets/salesforce.png" alt="Salesforce"></a></div>
+		<div class="col-md-3"><a href="//google.com"><img class="sponsor" src="assets/google.png" alt="Google"></a></div>
 		</div>
 		</div>
+	</div><!--/footer-container-->
     </footer> <!--/footer-->
 
 

@@ -1,24 +1,32 @@
-html,body {height: 100%;font-size: 16px;}
+html,body {height: 100%;font-size: 16px;width:100%;max-width:100%;overflow-x:hidden;}
 #wrap { display:block;
  		min-height: 100%;
         height: auto !important;
         height: 100%;
 	/* Negative indent footer by it's height */
-        margin: 0 auto -85px; /* negative indent = push+padding_bottom*/
-        padding-bottom: 30px;
+        margin: 0 auto -170px; /* negative indent = push+padding_bottom*/
+        /*padding-bottom: 30px;*/
         }
 
 /* Set the fixed height of the footer here */
-#push{height:60px;display:block;} /*height = footer_height+footer_paddings*/
-footer {height: 20px;display:block;background-color: #eeeeee;} /*same color as the hero unit*/
-#footer-container {background-color: #eeeeee;margin-top: 20px;margin-bottom:20px;padding-top: 20px;padding-bottom:20px;
+#push{height:170px;display:block;} /*height = footer_height+footer_paddings*/
+footer {height: 170px;display:block;background-color: #eeeeee; margin: 20px 0;} /*same color as the hero unit*/
+#footer-container {background-color: #eeeeee;/*margin-top: 20px;margin-bottom:20px;padding-top: 20px;padding-bottom:20px;*/
 }
 
-/* #sponsors{display:none;background-color: #eeeeee;}
-footer:hover #sponsors {
+#sponsors{background-color: #eeeeee;text-align: center;}
+/*footer:hover #sponsors {
 	transition: 5s;
     display: inline;
     background-color: #eeeeee;	
 }*/
 
-img.sponsor {max-height:100%; height: 100%}
+div>img{max-width:100%;}
+
+img.sponsor {max-height:1.5cm; max-width:4cm;;display:block; opacity:75%;
+	     -webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+filter: grayscale(100%);}
+
+img.sponsor:hover {filter: none;
+    -webkit-filter: grayscale(0);}

@@ -24,7 +24,6 @@
 		@import "//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css";
 		@import "./assets/style.css";
 		</style>
-	<script src="./assets/cseday.js"></script>
 	</head>
     
     <body>
@@ -47,7 +46,7 @@
 	</div>
 	<div style="margin-top:50px">
 	<div class="jumbotron" id="title">
-	  <h1>CSE Day 2014</h1>
+	  <img src="assets/headerlogo.png" alt="CSE Day 2014 Website">
 	</div><!-- jumbotron-->
 	<!--content for the tabs-->
 	<div class="tab-content">
@@ -266,7 +265,11 @@ Have you ever wonder what's it like to work at a start-up? Ever wonder why peopl
 	 
 		<div class="tab-pane fade" id="jeopardy">
 		<h1>Jeopardy</h1><hr>
-			<p><iframe src="https://docs.google.com/forms/d/1VUIkzs-2uhac4CClnfeqGUBqPI4zNOajxfIOzh1rON4/viewform?embedded=true" width="800" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe></p>
+<<<<<<< HEAD
+=======
+			<p>This is a page to sign up for Jeopardy!</p>
+>>>>>>> be5e9bb4e7a8f3291cf3dfae4009f26a994cc0bd
+			<p><iframe src="https://docs.google.com/forms/d/1VUIkzs-2uhac4CClnfeqGUBqPI4zNOajxfIOzh1rON4/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe></p>
 		</div>
 		
 		<div class="tab-pane fade" id="directions">
@@ -282,28 +285,6 @@ Have you ever wonder what's it like to work at a start-up? Ever wonder why peopl
 	
 		<div class="tab-pane fade" id="contact">
 		<h1>Contact us</h1><hr>
-		<center>
-    <h1>Computer Science and Engineering Society</h1>
-</center>
-<br />
- <h2>Corporate Affiliates Program</h2>
- <strong>Cody Noghera</strong>
-<br />Deputy Director
-<br /> <a href="mailto:cnoghera@ucsd.edu">cnoghera@ucsd.edu</a>
-<br />Phone: (858) 246-0214
-<br /> <a href="http://www.jacobsschool.ucsd.edu/external/external_cap/">Corporate Affiliates Program</a>
-
- <h2>CSE Day</h2>
- <strong>Timothy Kua</strong>
-<br />CSE Day Co-Chair
-<br /> <a href="mailto:tkua@ucsd.edu">tkua@ucsd.edu</a>
-<br /> <a href="http://cses.ucsd.edu/cseday/">CSE Day</a>
-<br />
-<br /> <strong>Jacque Douglas</strong>
-<br />CSE Day Co-Chair
-<br /> <a href="mailto:jd45093@gmail.com">jd45093@gmail.com</a>
-<br /> <a href="http://cses.ucsd.edu/cseday/">CSE Day</a>
-<br />
 		</div>
 		
 	</div>  <!--tab content-->    
@@ -316,7 +297,6 @@ Have you ever wonder what's it like to work at a start-up? Ever wonder why peopl
     <div id="footer-container">
     	<div class="container">
     	<a href="//cses.ucsd.edu"> UCSD CSES</a>
-Sponsored by:
     	</div><!--/container-->
     </div><!--/footer-container-->
     <div class="row" id="sponsors footer-container">
@@ -325,8 +305,8 @@ Sponsored by:
 		<div class="col-md-3"><a href="//cisco.com"><img class="sponsor" src="assets/cisco.png" alt="Cisco"></a></div>
 		<div class="col-md-3"><a href="//lifetech.com"><img class="sponsor" src="assets/lifetech.png" alt="Lifetech"></a></div>
 		<div class="col-md-3"><a href="//qualcomm.com"><img class="sponsor" src="assets/qualcomm.png" alt="Qualcomm"></a></div>
-		<div class="col-md-6"><a href="//salesforce.com"><img class="sponsor" src="assets/salesforce.png" alt="Salesforce"></a></div>
-		<div class="col-md-6"><a href="//google.com"><img class="sponsor" src="assets/google.png" alt="Google"></a></div>
+		<div class="col-md-3"><a href="//salesforce.com"><img class="sponsor" src="assets/salesforce.png" alt="Salesforce"></a></div>
+		<div class="col-md-3"><a href="//google.com"><img class="sponsor" src="assets/google.png" alt="Google"></a></div>
 		</div>
 		</div>
     </footer> <!--/footer-->

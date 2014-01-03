@@ -23,10 +23,11 @@ footer {height: 170px;display:block;background-color: #eeeeee; margin: 20px 0;} 
 
 div>img{max-width:100%;}
 
-img.sponsor {max-height:1.5cm; max-width:4cm;;display:block; opacity:75%;
-	     -webkit-filter: grayscale(100%);
+img.sponsor {height: 1.5cm; max-height:2cm; max-width:7cm;
+	     /*-webkit-filter: grayscale(100%);
 -moz-filter: grayscale(100%);
-filter: grayscale(100%);}
+filter: grayscale(100%);*/
+margin:.25cm;}
 
 img.sponsor:hover {filter: none;
     -webkit-filter: grayscale(0);}

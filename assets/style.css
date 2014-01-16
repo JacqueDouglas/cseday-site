@@ -4,13 +4,13 @@ html,body {height: 100%;font-size: 16px;width:100%;max-width:100%;overflow-x:hid
         height: auto !important;
         height: 100%;
 	/* Negative indent footer by it's height */
-        margin: 0 auto -170px; /* negative indent = push+padding_bottom*/
+        margin: 0 auto -70px; /* negative indent = push+padding_bottom*/
         /*padding-bottom: 30px;*/
         }
 
 /* Set the fixed height of the footer here */
-#push{height:170px;display:block;} /*height = footer_height+footer_paddings*/
-footer {height: 170px;display:block;background-color: #eeeeee; margin: 20px 0;} /*same color as the hero unit*/
+#push{height:70px;display:block;} /*height = footer_height+footer_paddings*/
+footer {height: 70px;display:block;background-color: #eeeeee; margin: 20px 0;} /*same color as the hero unit*/
 #footer-container {background-color: #eeeeee;/*margin-top: 20px;margin-bottom:20px;padding-top: 20px;padding-bottom:20px;*/
 }
 
